@@ -1,0 +1,28 @@
+.features-container {
+    padding: 40px;
+  }
+  
+  .feature-item {
+    padding: 20px;
+  }
+  
+  .feature-card {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .feature-title {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-family: 'Roboto', sans-serif;
+  }
+  

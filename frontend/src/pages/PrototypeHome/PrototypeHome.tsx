@@ -1,23 +1,15 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
+import './PrototypeHome.css'; // Import the CSS file
 
 const PrototypeHome: React.FC = () => {
   return (
-    <Box
-      sx={{
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-      }}
-    >
-      <Typography variant="h2">Prototype Version</Typography>
-      <Typography variant="body1" sx={{ margin: '20px 0' }}>
+    <Box className="prototype-home">
+      <Typography variant="h2" className="prototype-title">Prototype Version</Typography>
+      <Typography variant="body1" className="prototype-description">
         This is the prototype version of Intineris.
       </Typography>
-      <Button variant="contained" color="primary" href="/">
+      <Button variant="contained" color="secondary" href="/" className="prototype-button">
         Back to Home
       </Button>
     </Box>

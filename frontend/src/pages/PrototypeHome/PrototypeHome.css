@@ -1,0 +1,54 @@
+/* General styles for the Prototype Home Section */
+.prototype-home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4; /* Light background to match the style */
+    padding: 20px; /* Additional padding for better spacing */
+  }
+  
+  .prototype-title {
+    font-family: 'Playfair Display', serif; /* Stylish font for headings */
+    font-size: 3rem; /* Increased font size for emphasis */
+    margin-bottom: 15px; /* Space below the title */
+    color: #333; /* Text color */
+  }
+  
+  .prototype-description {
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif; /* Consistent font with other components */
+    font-size: 1.25rem; /* Slightly larger font for visibility */
+    color: #555; /* Soft gray for description text */
+  }
+  
+  .prototype-button {
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    padding: 10px 30px; /* Consistent padding */
+    background-color: #0073e6; /* Primary color */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prototype-button:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 600px) {
+    .prototype-title {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .prototype-description {
+      font-size: 1rem; /* Adjust description font size */
+    }
+  
+    .prototype-button {
+      padding: 8px 20px; /* Smaller button padding on mobile */
+    }
+  }
+  

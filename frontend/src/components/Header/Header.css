@@ -1,0 +1,24 @@
+.header {
+    background-color: white;
+    box-shadow: none;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    color: black;
+  }
+  
+  .nav-link {
+    color: black;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  

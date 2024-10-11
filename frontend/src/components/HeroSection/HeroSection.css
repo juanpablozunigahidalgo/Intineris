@@ -1,0 +1,26 @@
+.hero-section {
+    background-image: url('./../../../public/herosection.jpg.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+  }
+  
