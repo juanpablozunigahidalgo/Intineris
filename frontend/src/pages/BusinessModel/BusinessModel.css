@@ -1,1 +1,29 @@
- 
+.business-model {
+    background-color: white;
+    color: #003366; /* Dark blue */
+    padding: 20px;
+}
+
+.business-title {
+    color: #003366; /* Dark blue */
+}
+
+.business-step {
+    color: #003366; /* Dark blue */
+}
+
+.business-description {
+    color: #003366; /* Dark blue */
+}
+
+.action-buttons .back-button {
+    background-color: #003366; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.action-buttons .back-button:hover {
+    background-color: #002244; /* Darker blue for hover */
+}

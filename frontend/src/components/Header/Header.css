@@ -1,24 +1,27 @@
 .header {
-    background-color: white;
-    box-shadow: none;
-  }
-  
-  .toolbar {
+    background-color: #001122 !important; /* Even darker ocean blue */
+    color: white !important; /* White text */
+}
+
+.toolbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
-  }
-  
-  .logo {
-    font-family: 'Playfair Display', serif;
-    color: black;
-  }
-  
-  .nav-link {
-    color: black;
-  }
-  
-  .menu-button {
-    display: none;
-  }
-  
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: white !important; /* White text */
+    margin-right: 10px;
+}
+
+.logo {
+    color: white !important; /* White text */
+    font-weight: bold; /* Make the text bolder */
+    font-size: 1.5rem; /* Increase the font size */
+    margin-left: auto; /* Pushes the logo to the right */
+}

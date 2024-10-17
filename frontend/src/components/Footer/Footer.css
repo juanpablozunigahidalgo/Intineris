@@ -1,11 +1,11 @@
 .footer {
-    background-color: #f5f5f5;
-    padding: 20px;
+    background-color: white;
+    color: #003366; /* Dark blue */
     text-align: center;
-  }
-  
-  .footer p {
+    padding: 10px;
+}
+
+.footer p {
     margin: 0;
     color: #777;
-  }
-  
+}

@@ -6,35 +6,38 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f4f4f4; /* Light background to match the style */
-    padding: 20px; /* Additional padding for better spacing */
+    background-color: white;
+    color: #003366; /* Dark blue */
+    padding: 20px;
+    text-align: center;
   }
   
   .prototype-title {
     font-family: 'Playfair Display', serif; /* Stylish font for headings */
     font-size: 3rem; /* Increased font size for emphasis */
     margin-bottom: 15px; /* Space below the title */
-    color: #333; /* Text color */
+    color: #003366; /* Dark blue */
   }
   
   .prototype-description {
     margin: 20px 0;
     font-family: 'Roboto', sans-serif; /* Consistent font with other components */
     font-size: 1.25rem; /* Slightly larger font for visibility */
-    color: #555; /* Soft gray for description text */
+    color: #003366; /* Dark blue */
   }
   
   .prototype-button {
     font-family: 'Roboto', sans-serif; /* Consistent font */
-    padding: 10px 30px; /* Consistent padding */
-    background-color: #0073e6; /* Primary color */
+    padding: 10px 20px; /* Consistent padding */
+    background-color: #003366; /* Dark blue */
     color: white;
-    border-radius: 5px;
+    border: none;
+    cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .prototype-button:hover {
-    background-color: #005bb5; /* Darker shade on hover */
+    background-color: #002244; /* Darker blue for hover */
   }
   
   /* Media Queries */
