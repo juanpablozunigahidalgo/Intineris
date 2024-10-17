@@ -1,0 +1,15 @@
+.hero-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 400px; /* Set maximum height */
+    background-color: #001122; /* Match header background color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 0 10%; /* Optional: Add padding for better text readability */
+}
+
+.hero-text {
+    max-width: 800px; /* Optional: Limit text width for better readability */
+}

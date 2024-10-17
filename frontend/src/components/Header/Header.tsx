@@ -9,12 +9,14 @@ const Header: React.FC = () => {
       sx={{ backgroundColor: '#001122' }} // Use sx prop for styling
     >
       <Toolbar className="toolbar">
+        {/* <Typography variant="h6" className="logo">Intineris</Typography> */}
         <div className="nav-links">
           <Button color="inherit" className="nav-link">Home</Button>
-          <Button color="inherit" className="nav-link">About</Button>
-          <Button color="inherit" className="nav-link">Contact</Button>
+          <Button color="inherit" className="nav-link">Vision</Button>
+          <Button color="inherit" className="nav-link">Campaing</Button>
+          <Button color="inherit" className="nav-link">Join Us</Button>
+          <Button color="inherit" className="nav-link">Get APP</Button>
         </div>
-        <Typography variant="h6" className="logo">Intineris</Typography>
       </Toolbar>
     </AppBar>
   );

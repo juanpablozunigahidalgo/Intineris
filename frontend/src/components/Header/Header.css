@@ -12,6 +12,7 @@
 .nav-links {
     display: flex;
     align-items: center;
+    margin-left: auto; /* Pushes the nav-links to the right */
 }
 
 .nav-link {
@@ -23,5 +24,5 @@
     color: white !important; /* White text */
     font-weight: bold; /* Make the text bolder */
     font-size: 1.5rem; /* Increase the font size */
-    margin-left: auto; /* Pushes the logo to the right */
+    margin-right: auto; /* Pushes the logo to the left */
 }
