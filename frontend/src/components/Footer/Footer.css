@@ -3,6 +3,7 @@
     color: #003366; /* Dark blue */
     text-align: center;
     padding: 10px;
+    margin-top: 20px; /* Add margin to create space above the footer */
 }
 
 .footer p {

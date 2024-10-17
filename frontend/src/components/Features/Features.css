@@ -1,24 +1,58 @@
 .features-container {
-    background-color: white;
-    color: #003366; /* Dark blue */
+    background-color: white; /* Keep white background */
+    color: #001122; /* Dark blue text color */
     padding: 20px;
+    min-height: 400px; /* Keep minimum height */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between; /* Space out items */
 }
 
 .feature-item {
     text-align: center;
+    margin-bottom: 20px; /* Space between items */
+    flex: 1 1 calc(33.333% - 20px); /* Split into three columns */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.feature-card {
-    background-color: white;
-    color: #003366; /* Dark blue */
-    padding: 20px;
-    border: 1px solid #003366; /* Dark blue border */
+.feature-circle {
+    background-color: #001122; /* Keep dark blue for the circle */
+    color: white; /* Keep font color white */
+    border-radius: 50%; /* Make it circular */
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the circle */
+    font-weight: bold; /* Make the title bold */
 }
 
 .feature-title {
-    color: #003366; /* Dark blue */
+    color: #001122; /* Dark blue */
 }
 
 .feature-description {
-    color: #003366; /* Dark blue */
+    color: #001122; /* Dark blue text color */
+    padding: 10px; /* Add some padding */
+    border-radius: 4px; /* Optional: Rounded corners */
+    margin-top: 10px; /* Space above the description */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .feature-item {
+        flex: 1 1 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Space between items */
+    }
+
+    .feature-circle {
+        width: 80px; /* Smaller circle on mobile */
+        height: 80px; /* Smaller circle on mobile */
+    }
 }

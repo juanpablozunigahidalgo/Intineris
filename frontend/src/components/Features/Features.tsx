@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Paper, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import './Features.css'; // Import new styles
 
 const featuresData = [
@@ -11,12 +11,12 @@ const featuresData = [
 const Features: React.FC = () => {
   return (
     <Grid container spacing={2} className="features-container">
-      {featuresData.map((feature) => (
+      {featuresData.map((feature, index) => (
         <Grid item xs={12} sm={4} key={feature.title} className="feature-item">
-          <Paper elevation={3} className="feature-card">
+          <div className="feature-circle">
             <Typography variant="h6" className="feature-title">{feature.title}</Typography>
-            <Typography variant="body1" className="feature-description">{feature.description}</Typography>
-          </Paper>
+          </div>
+          <Typography variant="body1" className="feature-description">{feature.description}</Typography>
         </Grid>
       ))}
     </Grid>

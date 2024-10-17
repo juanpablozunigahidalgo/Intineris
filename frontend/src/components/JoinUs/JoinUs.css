@@ -1,0 +1,94 @@
+.join-us-container {
+    display: flex; /* Use flexbox to create a two-column layout */
+    max-width: 100%; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    max-height: 400px;
+}
+
+.form-section {
+    flex: 1; /* Take up equal space */
+    padding: 0; /* Add padding */
+    max-height: 100%;
+    overflow: auto; /* Enable scrolling if content exceeds max height */
+}
+
+.info-section {
+    flex: 1; /* Take up equal space */
+    padding: 50px; /* Add padding */
+    background-color: #ffffff; /* Optional: Light background for contrast */
+    border-left: 0px solid #ccc; /* Optional: Add a left border for separation */
+}
+
+.info-title {
+    color: #001122; /* Title color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.info-text {
+    color: #001122; /* Text color */
+    line-height: 1.5; /* Improve readability */
+}
+
+.join-us-form {
+    max-width: 100%;
+    margin-left: auto; /* Align to the right */
+    margin-right: 20px; /* Add some space from the right edge */
+    padding: 15%; /* Set padding to 10% */
+    background-color: #ffffff; /* Set background to white */
+    border-radius: 8px;
+    max-height: 100%; /* Ensure form does not exceed section height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    height: 100%; /* Set height to 100% of the parent */
+    flex-grow: 1; /* Allow the form to grow and shrink */
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #001122; /* Updated font color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #001122; /* Updated font color */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submit-button {
+    max-width: 250px; /* Set max width for the button */
+    width: 100%; /* Full width within the max width */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Add some space above the button */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Align the button to the right */
+.form-group:last-child {
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+}

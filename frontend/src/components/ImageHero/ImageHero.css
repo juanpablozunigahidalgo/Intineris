@@ -1,27 +1,10 @@
 .hero-section3 {
     display: flex;
-    flex-direction: row; /* Default to row for larger screens */
     height: 100vh;
     max-height: 400px;
     max-width: 100%;
     background-color: white;
-}
-
-.hero-left3 {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Asegúrate de que no haya desbordamiento */
-}
-
-.hero-right3 {
-    flex: 1;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    overflow: hidden; /* Ensure no overflow */
 }
 
 .hero-image {
