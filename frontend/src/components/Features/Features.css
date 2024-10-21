@@ -19,17 +19,19 @@
     background-color: #001122; /* Keep dark blue for the circle */
     color: white; /* Keep font color white */
     border-radius: 50%; /* Make it circular */
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
+    width: 150px; /* Increased width for larger circles */
+    height: 150px; /* Increased height for larger circles */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto; /* Center the circle */
     font-weight: bold; /* Make the title bold */
+    font-size: 11px; /* Smaller font size for the text inside the circle */
 }
 
 .feature-title {
-    color: #001122; /* Dark blue */
+    color: #ffffff; /* Change to white for better contrast */
+    font-size: 12px; /* Smaller font size for the title */
 }
 
 .feature-description {
@@ -52,7 +54,7 @@
     }
 
     .feature-circle {
-        width: 80px; /* Smaller circle on mobile */
-        height: 80px; /* Smaller circle on mobile */
+        width: 120px; /* Smaller circle on mobile */
+        height: 120px; /* Smaller circle on mobile */
     }
 }

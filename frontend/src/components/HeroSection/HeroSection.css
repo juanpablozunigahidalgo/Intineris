@@ -27,6 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .hero-logo {
@@ -35,3 +36,16 @@
     width: auto;
     height: auto;
 }
+.app-image {
+    min-height: 250px; /* Maintain aspect ratio */
+    max-height: 100px; /* Set a max height for images */
+     /* Space between images */
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .app-images {
+      flex-direction: column; /* Stack images in a column */
+      align-items: center; /* Center images horizontally */
+    }
+  }

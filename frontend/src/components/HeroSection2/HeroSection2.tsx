@@ -6,7 +6,7 @@ const HeroSection2: React.FC = () => {
   return (
     <Box className="hero-section2">
       <Typography variant="h4" className="hero-text">
-        We want to provide tourists, cyclists and sport activists the possibility to find showers across the city.
+        We want to provide tourists, cyclists and sport activists access to showers and safe storage across the city.
       </Typography>
     </Box>
   );

@@ -13,9 +13,10 @@ const Header: React.FC = () => {
         <div className="nav-links">
           <Button color="inherit" className="nav-link">Home</Button>
           <Button color="inherit" className="nav-link">Vision</Button>
+          <Button color="inherit" className="nav-link">Features</Button>
           <Button color="inherit" className="nav-link">Campaing</Button>
-          <Button color="inherit" className="nav-link">Join Us</Button>
-          <Button color="inherit" className="nav-link">Get APP</Button>
+          <Button color="inherit" className="nav-link">Investors</Button>
+          <Button color="inherit" className="nav-link">Contact</Button>
         </div>
       </Toolbar>
     </AppBar>

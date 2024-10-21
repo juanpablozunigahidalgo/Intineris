@@ -1,12 +1,32 @@
 .footer {
     background-color: white;
     color: #003366; /* Dark blue */
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px; /* Add margin to create space above the footer */
+    text-align: left; /* Align text to the left */
+    padding-top: 50px;
+    position: relative; /* Set position to relative for absolute positioning of child */
+    height: 250px; /* Adjusted height for the footer */
+    padding-left: 50px; /* Left padding for all content */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.footer div {
+    margin-bottom: 2px; /* Add 2px space between divs */
+}
+
+.footer .copyright {
+    position: absolute; /* Position the copyright notice absolutely */
+    bottom: 10px; /* Distance from the bottom */
+    left: 50px; /* Align to the left with 50px margin */
 }
 
 .footer p {
     margin: 0;
-    color: #777;
+    color: #003366; /* Dark blue for text */
+}
+
+/* New styles for links */
+.footer a {
+    color: #003366; /* Dark blue for links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Each link on a new line */
 }

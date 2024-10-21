@@ -1,0 +1,74 @@
+/* ContactForm.css */
+
+/* Container wrapping the form */
+.form-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  /* Styling for the left side text */
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+  }
+  
+  /* Styling for the right side form */
+  .right-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  /* Styling for form fields */
+  .input-field {
+    margin-bottom: 16px;
+  }
+  
+  /* Styling for the submit button */
+  .submit-button {
+    background-color: #4a148c;
+    color: white;
+    text-transform: none;
+    width: 150px;
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .submit-button {
+      width: 100%;
+      align-self: center;
+    }
+  }
+  

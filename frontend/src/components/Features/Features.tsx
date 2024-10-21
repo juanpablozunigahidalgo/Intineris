@@ -3,13 +3,14 @@ import { Grid, Typography } from '@mui/material';
 import './Features.css'; // Import new styles
 
 const featuresData = [
-  { title: 'Safe Storage', description: 'Store your belongings safely while you enjoy the city.' },
-  { title: 'Convenient Locations', description: 'Find showers and storage close to your activities.' },
-  { title: 'User-Friendly App', description: 'Easily navigate through our app to find what you need.' },
+  { title: 'Showers', description: 'Store your belongings safely while you enjoy the city.' },
+  { title: 'Storage', description: 'Find showers close to your activities. The city is yours.' },
+  { title: 'Trust', description: 'All users are ID check and evaluated from the community.' },
 ];
 
 const Features: React.FC = () => {
   return (
+    <div className="section-position">
     <Grid container spacing={2} className="features-container">
       {featuresData.map((feature, index) => (
         <Grid item xs={12} sm={4} key={feature.title} className="feature-item">
@@ -20,6 +21,7 @@ const Features: React.FC = () => {
         </Grid>
       ))}
     </Grid>
+    </div>
   );
 };
 

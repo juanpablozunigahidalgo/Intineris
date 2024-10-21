@@ -1,0 +1,21 @@
+.hero-section3 {
+    display: flex;
+    height: 100vh;
+    max-height: 400px;
+    max-width: 100%;
+    background-color: white;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.hero-image {
+    width: 100%; /* Llenar completamente el ancho del contenedor */
+    height: 100%; /* Llenar completamente el alto del contenedor */
+    object-fit: cover; /* Cubre el contenedor mientras mantienes la proporción */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .hero-section3 {
+        flex-direction: column; /* Stack elements vertically */
+    }
+}
