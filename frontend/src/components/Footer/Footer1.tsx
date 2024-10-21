@@ -4,34 +4,33 @@ import './Footer1.css';
 const Footer1: React.FC = () => {
     return (
         <footer className="footer">
-            <div className="footer-section services">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#personal-training">Personal Training</a></li>
-                    <li><a href="#ageless-fitness">The Ageless Fitness Formula</a></li>
-                    <li><a href="#online-training">Online Personal Training</a></li>
-                </ul>
-            </div>
-            <div className="footer-section company">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#terms">Terms & Conditions</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div className="footer-section support">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#login">Client Login</a></li>
-                    <li><a href="#community">Join Our Facebook Community</a></li>
-                </ul>
-            </div>
             <div className="footer-section address">
                 <h3>Address</h3>
                 <p>4233 Florentine Dr.<br />Longmont<br />CO 80503</p>
+            </div>
+            <div className="footer-section services">
+                <h3> </h3>
+                <ul>
+                    <li><a href="#personal-training"> </a></li>
+                    <li><a href="#ageless-fitness"> </a></li>
+                    <li><a href="#online-training"> </a></li>
+                </ul>
+            </div>
+            <div className="footer-section company">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#about">Vision</a></li>
+                    <li><a href="#blog">Join US</a></li>
+                    <li><a href="#terms">FAQ</a></li>
+                    <li><a href="#privacy">Investor Information</a></li>
+                </ul>
+            </div>
+            <div className="footer-section support">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#contact">info@intineris.com</a></li>
+                    <li><a href="#login"> +46 729971641 </a></li>
+                </ul>
             </div>
         </footer>
     );
