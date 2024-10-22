@@ -1,44 +1,43 @@
+.section-position {
+    min-height: 300px; /* Ensure it takes the full viewport height */
+}
+
+.center-vertical {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items in a column if needed */
+    margin-top: 100px;
+     /* Ensure it takes the full height of the parent */
+}
+
 .features-container {
     background-color: white; /* Keep white background */
     color: #001122; /* Dark blue text color */
     padding: 20px;
-    min-height: 400px; /* Keep minimum height */
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    justify-content: space-between; /* Space out items */
+    width: 100%; /* Full width */
 }
 
 .feature-item {
-    text-align: center;
+    text-align: center; /* Center text */
     margin-bottom: 20px; /* Space between items */
     flex: 1 1 calc(33.333% - 20px); /* Split into three columns */
     box-sizing: border-box; /* Include padding in width calculation */
-}
-
-.feature-circle {
-    background-color: #001122; /* Keep dark blue for the circle */
-    color: white; /* Keep font color white */
-    border-radius: 50%; /* Make it circular */
-    width: 150px; /* Increased width for larger circles */
-    height: 150px; /* Increased height for larger circles */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Center the circle */
-    font-weight: bold; /* Make the title bold */
-    font-size: 11px; /* Smaller font size for the text inside the circle */
+    padding: 20px; /* Add padding for internal spacing */
 }
 
 .feature-title {
-    color: #ffffff; /* Change to white for better contrast */
-    font-size: 12px; /* Smaller font size for the title */
+    color: #001122; /* Dark blue for title */
+    font-weight:700!important; /* Make the title bold */
+    font: size 50px;;
+    margin-bottom: 12px; /* Space below title */
 }
 
 .feature-description {
     color: #001122; /* Dark blue text color */
     padding: 10px; /* Add some padding */
     border-radius: 4px; /* Optional: Rounded corners */
-    margin-top: 10px; /* Space above the description */
+    margin-top: 8px; /* Space above description */
 }
 
 /* Responsive Design */
@@ -51,10 +50,5 @@
     .feature-item {
         flex: 1 1 100%; /* Full width on mobile */
         margin-bottom: 20px; /* Space between items */
-    }
-
-    .feature-circle {
-        width: 120px; /* Smaller circle on mobile */
-        height: 120px; /* Smaller circle on mobile */
     }
 }

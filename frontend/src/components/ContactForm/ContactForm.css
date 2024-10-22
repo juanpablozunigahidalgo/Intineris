@@ -1,74 +1,88 @@
-/* ContactForm.css */
-
 /* Container wrapping the form */
 .form-container {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 900px;
-  }
-  
-  /* Styling for the left side text */
-  .left-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c3e50;
-  }
-  
-  .description {
-    font-size: 1rem;
-    color: #7f8c8d;
-    margin-top: 10px;
-  }
-  
-  /* Styling for the right side form */
-  .right-side {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .form {
-    width: 100%;
-  }
-  
-  /* Styling for form fields */
-  .input-field {
-    margin-bottom: 16px;
-  }
-  
-  /* Styling for the submit button */
-  .submit-button {
-    background-color: #4a148c;
-    color: white;
-    text-transform: none;
-    width: 150px;
-    align-self: flex-start;
-    margin-top: 20px;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 600px) {
-    .form-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Styling for the left side text */
+.left-side {
+  display: flex;
+  flex-direction: column; /* Stack title and description */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #001122;
+  margin-bottom: 10px; /* Add spacing between title and description */
+}
+
+.description {
+  font-size: 1rem;
+  color: #001122;
+  margin-bottom: 20px; /* Add some space below the description */
+}
+
+/* Styling for the right side form */
+.right-side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+}
+
+/* Styling for form fields */
+.input-field {
+  margin-bottom: 16px;
+}
+
+/* Styling for the submit button */
+.submit-button {
+  background-color: #001122;
+  color: white;
+  text-transform: none;
+  width: 150px;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+/* Hover effect for submit button */
+.submit-button:hover {
+  background-color: #001122aa; /* Slightly lighter shade of #001122 */
+}
+/* Input field border color customization */
+.input-field .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #001122; /* Default border color */
+
+}
+
+.input-field .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #001122; /* Border color on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form-container {
       padding: 10px;
-    }
-  
-    .title {
+  }
+
+  .title {
       font-size: 1.8rem;
-    }
-  
-    .description {
+      color: #001122;
+  }
+
+  .description {
       font-size: 0.9rem;
-    }
-  
-    .submit-button {
+      color: #001122;
+  }
+
+  .submit-button {
       width: 100%;
       align-self: center;
-    }
   }
-  
+}
+

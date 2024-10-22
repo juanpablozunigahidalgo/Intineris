@@ -6,7 +6,7 @@ const Footer1: React.FC = () => {
         <footer className="footer">
             <div className="footer-section address">
                 <h3>Address</h3>
-                <p>4233 Florentine Dr.<br />Longmont<br />CO 80503</p>
+                <p>Sankt Eriksgatan 6<br />Göteborg<br />Sweden</p>
             </div>
             <div className="footer-section services">
                 <h3> </h3>

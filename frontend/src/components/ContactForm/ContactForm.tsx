@@ -74,18 +74,19 @@ const ContactForm: React.FC = () => {
 
   return (
     <Box className="form-container">
-      <Grid container spacing={2} direction={isSmallScreen ? 'column' : 'row'}>
+      <Grid container spacing={10} direction={isSmallScreen ? 'column' : 'row'}>
         {/* Left Side: Title and Text */}
-        <Grid item xs={12} sm={6} className="left-side">
-          <Typography variant="h4" gutterBottom className="title">
-            Contact Form
-          </Typography>
-          <Typography variant="body1" className="description">
-            The following form demonstrates form validation in action. Contact
-            form component reduces the amount of time it is being re-rendered by
-            the user as it embraces uncontrolled form validation to reduce any
-            unnecessary performance penalty.
-          </Typography>
+        <Grid item xs={12} sm={6} container direction="column" spacing={2} className="left-side">
+          <Grid item>
+            <Typography variant="h4" gutterBottom className="title">
+              Contact Form
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="body1" className="description">
+              If you want to join this project as developer, business contributor or investor. Please do not hesistate to send a message Us.
+            </Typography>
+          </Grid>
         </Grid>
 
         {/* Right Side: Form */}
@@ -132,7 +133,7 @@ const ContactForm: React.FC = () => {
             <Button
               type="submit"
               variant="contained"
-              color="primary"
+              sx={{ backgroundColor: '#001122', color: 'white' }}
               className="submit-button"
             >
               Submit
