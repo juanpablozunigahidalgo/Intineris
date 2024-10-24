@@ -1,0 +1,91 @@
+.investors-container {
+    background-color: #001122;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Text Section */
+  .text-section-investors {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .text-section-investors h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-section-investors p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .hero-section-investors {
+    background-color: #001122;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pitch-button {
+    background-color: white;
+    color: #001122;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .pitch-button:hover {
+    background-color: #ccc;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input, 
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+  
+  .contact-form button {
+    background-color: white;
+    color: #001122;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ccc;
+  }
+  

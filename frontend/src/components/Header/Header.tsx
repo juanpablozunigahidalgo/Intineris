@@ -24,17 +24,23 @@ const Header: React.FC = () => {
           <Button color="inherit" className="nav-link" href="#home">Home</Button>
           <Button color="inherit" className="nav-link" onClick={() => scrollToSection('vision')}>Vision</Button>
           <Button color="inherit" className="nav-link" onClick={() => scrollToSection('features')}>Features</Button>
-          {/* Use RouterLink to navigate to /campaign */}
           <Button
             color="inherit"
             className="nav-link"
             component={RouterLink}
-            to="/campaign"
+            to="/investors"
           >
-            Campaign
+            Investors
           </Button>
-          <Button color="inherit" className="nav-link" href="#investors">Investors</Button>
           <Button color="inherit" className="nav-link" onClick={() => scrollToSection('contact')}>Contact</Button>
+          <Button
+            color="inherit"
+            className="nav-link"
+            component={RouterLink}
+            to="/Prototype"
+          >
+           Get APP
+          </Button>
         </div>
       </Toolbar>
     </AppBar>
