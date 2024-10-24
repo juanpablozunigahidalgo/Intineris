@@ -2,6 +2,19 @@ import React from 'react';
 import './Footer1.css';
 
 const Footer1: React.FC = () => {
+
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+          const offset = window.innerHeight / 2;  // Middle of the screen
+          window.scrollTo({
+            top: sectionPosition - offset,
+            behavior: 'smooth',
+          });
+        }
+    };
+
     return (
         <footer className="footer">
             <div className="footer-section address">
@@ -19,10 +32,10 @@ const Footer1: React.FC = () => {
             <div className="footer-section company">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#about">Vision</a></li>
-                    <li><a href="#blog">Join US</a></li>
-                    <li><a href="#terms">FAQ</a></li>
-                    <li><a href="#privacy">Investor Information</a></li>
+                    <li><a href="#vision" onClick={() => scrollToSection('vision')}>Vision</a></li>      {/* Links to Vision */}
+                    <li><a href="/joinus">Join Us</a></li>    {/* Links to Features */}
+                    <li><a href="/faq">FAQ</a></li>             {/* Link to FAQ page */}
+                    <li><a href="/investor-information">Investor Information</a></li> {/* Link to Investor Info page */}
                 </ul>
             </div>
             <div className="footer-section support">

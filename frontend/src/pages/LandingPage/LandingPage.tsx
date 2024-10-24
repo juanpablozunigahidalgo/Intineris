@@ -11,11 +11,32 @@ const LandingPage: React.FC = () => {
   return (
     <>
       <Header />
-      <HeroSection />
-      <HeroSection2 />
-      <Features />
-      <ImageHero2 />
-      <ContactForm /> 
+      
+      {/* Add an id for Home */}
+      <section id="home">
+        <HeroSection />
+      </section>
+      
+      {/* Add an id for Vision */}
+      <section id="vision">
+        <HeroSection2 />
+      </section>
+      
+      {/* Add an id for Features */}
+      <section id="features">
+        <Features />
+      </section>
+      
+      {/* Add an id for Campaign */}
+      <section id="campaign">
+        <ImageHero2 />
+      </section>
+      
+      {/* Add an id for Contact */}
+      <section id="contact">
+        <ContactForm />
+      </section>
+
       <Footer />
     </>
   );

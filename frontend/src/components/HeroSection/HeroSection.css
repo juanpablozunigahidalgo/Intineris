@@ -1,7 +1,7 @@
 .hero-section {
     display: flex;
-    height: 100vh;
-    max-height: 400px; /* Set maximum height */
+    flex-direction: row;
+    min-height: 400px;
     background-color: white;
     color: #001122; /* Updated to a darker blue */
 }
@@ -15,11 +15,14 @@
 }
 
 .hero-title {
-    margin-bottom: 10px;
+    font-size: 20vw; /* Increased font size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 40px; /* Increased space below the title */
 }
 
 .hero-slogan {
     margin-top: 0;
+    line-height: 1.5; /* Optional: Adjust spacing between lines */
 }
 
 .hero-right {
@@ -28,24 +31,30 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap; /* Ensure the content wraps properly */
 }
 
-.hero-logo {
-    max-width: 60%;
-    max-height: 60%;
-    width: auto;
-    height: auto;
-}
 .app-image {
     min-height: 250px; /* Maintain aspect ratio */
     max-height: 100px; /* Set a max height for images */
-     /* Space between images */
-  }
-  
-  /* Media query for small screens */
-  @media (max-width: 768px) {
-    .app-images {
-      flex-direction: column; /* Stack images in a column */
-      align-items: center; /* Center images horizontally */
+    max-width: 100%;   /* Ensure images don’t overflow */
+    object-fit: contain;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Stack left and right sections */
+        height: auto; /* Allow the section to grow vertically */
+        padding: 20px; /* Add padding for better spacing */
     }
-  }
+    .hero-right {
+        flex-direction: column; /* Stack images vertically */
+        justify-content: flex-start; /* Align to the top */
+        align-items: center; /* Center images horizontally */
+    }
+    .app-image {
+        margin-bottom: 15px; /* Add space between images */
+        max-height: 150px;    /* Optionally increase height for smaller screens */
+    }
+}

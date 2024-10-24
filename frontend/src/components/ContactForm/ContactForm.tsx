@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
         <Grid item xs={12} sm={6} container direction="column" spacing={2} className="left-side">
           <Grid item>
             <Typography variant="h4" gutterBottom className="title">
-              Contact Form
+              Get in contact
             </Typography>
           </Grid>
           <Grid item>

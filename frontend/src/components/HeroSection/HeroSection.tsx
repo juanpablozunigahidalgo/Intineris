@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Box, Typography } from '@mui/material';
 import Typed from 'typed.js';
-import './HeroSection.css'; // Import new styles
+import './HeroSection.css'; // Import your CSS file
 import IntinerisLogo from './Intineris-Logo.svg'; // Adjust the path as necessary
 import App1 from '../../Assets/Images/App1.png';
 import App2 from '../../Assets/Images/App2.png';
@@ -12,8 +12,8 @@ const HeroSection: React.FC = () => {
 
   useEffect(() => {
     const options = {
-      strings: [" Tourists.", " Runners.", " Cyclists.", " Hikers.", " Swimmers.", " Bike commuters."],
-      typeSpeed: 55,
+      strings: [" Tourists.", " Runners.", " Cyclists.", " Hikers.", " Swimmers.", " Bike commuters.", " City hikers. ", " Skaters. ", " Walk commuters. "],
+      typeSpeed: 130,
       backSpeed: 30,
       loop: true,
     };
@@ -28,9 +28,25 @@ const HeroSection: React.FC = () => {
   return (
     <Box className="hero-section">
       <Box className="hero-left">
-        <Typography variant="h2" className="hero-title">Intineris</Typography>
-        <Typography variant="h5" className="hero-slogan">
-          Showers and storage for : <span ref={typedElement}></span>
+        {/* Apply inline styles for bigger and bolder title */}
+        <Typography 
+          variant="h2" 
+          sx={{ 
+            fontSize: '50px',   // Larger font size
+            fontWeight: 'bold', // Bolder text
+            marginBottom: '20px' // Increase space below
+          }}
+        >
+          Intineris
+        </Typography>
+        <Typography 
+          variant="h5" 
+          sx={{ 
+            marginBottom: '20px',  // Add more space below the text
+            lineHeight: 1.5         // Adjust the line height for better spacing
+          }}
+        >
+          Showers and storage for: <span ref={typedElement}></span>
         </Typography>
       </Box>
       <Box className="hero-right">
