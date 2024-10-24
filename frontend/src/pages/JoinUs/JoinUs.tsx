@@ -3,10 +3,10 @@ import './JoinUs.css';  // Import the CSS file
 
 const JoinUs: React.FC = () => {
   return (
-    <div className="joinus-container">
+    <div className="joinus-container--joinus">
       
       {/* Text Section */}
-      <section className="text-section">
+      <section className="text-section-joinus">
         <h1>Join Intineris - The Sustainable Shower Sharing App</h1>
         <p>
           Intineris is on a mission to create a more sustainable and convenient way for hikers, cyclists, and eco-conscious individuals to find safe and accessible showers after their outdoor adventures. 
@@ -18,7 +18,7 @@ const JoinUs: React.FC = () => {
       </section>
       
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section-joinus">
         <a 
           href="https://drive.google.com/intineris-pitch-deck" 
           target="_blank" 
@@ -30,7 +30,7 @@ const JoinUs: React.FC = () => {
       </section>
       
       {/* Why Join Us Section */}
-      <section className="why-join-section">
+      <section className="why-join-section-joinus">
         <h2>Why Join Intineris?</h2>
         <ul>
           <li>
@@ -49,9 +49,9 @@ const JoinUs: React.FC = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="contact-section">
+      <section className="contact-section-joinus">
         <h2>Get in Touch and Join Us</h2>
-        <form className="contact-form">
+        <form className="contact-form-joinus">
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" />
           
