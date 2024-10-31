@@ -7,50 +7,18 @@ const JoinUs: React.FC = () => {
       
       {/* Text Section */}
       <section className="text-section-joinus">
-        <h1>Join Intineris - The Sustainable Shower Sharing App</h1>
+        <h1>Join US</h1>
         <p>
-          Intineris is on a mission to create a more sustainable and convenient way for hikers, cyclists, and eco-conscious individuals to find safe and accessible showers after their outdoor adventures. 
-          We're building a platform that connects people who need a clean, secure space to refresh with hosts willing to share their facilities.
+          Intineris is on a mission to create a more sustainable and convenient world by offering people access to showers and safe storage for their belongings. Whether you're a tourist, hiker, cyclist, runner, or swimmer, Intineris is about transforming cities into a vast gym where you can be active and access every corner of the city. The city is yours. The city is for everyone to enjoy. 
         </p>
         <p>
-          We're looking for dedicated programmers, engineers, business leaders, and individuals passionate about sustainable solutions to join our growing team. Together, we can build a community that supports eco-friendly travel and healthy living.
+          If you want to contribute as an engineer, business idealist, or individual, you are welcome! This is about finding passionate people who want to better the world, reduce the use of petrol transportation, and incentivize human-powered transport. 
         </p>
       </section>
       
-      {/* Hero Section */}
-      <section className="hero-section-joinus">
-        <a 
-          href="https://drive.google.com/intineris-pitch-deck" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="join-button"
-        >
-          View Our Pitch Deck
-        </a>
-      </section>
       
-      {/* Why Join Us Section */}
-      <section className="why-join-section-joinus">
-        <h2>Why Join Intineris?</h2>
-        <ul>
-          <li>
-            <strong>Innovate:</strong> Help us revolutionize the way people travel and stay clean on the go, offering a unique service to outdoor enthusiasts and commuters.
-          </li>
-          <li>
-            <strong>Sustainability:</strong> Be part of an eco-conscious community that promotes resource sharing and reducing environmental impact.
-          </li>
-          <li>
-            <strong>Growth:</strong> Work on a dynamic, fast-growing project with potential for global reach, creating meaningful social impact.
-          </li>
-          <li>
-            <strong>Diverse Roles:</strong> Whether you're a developer, business strategist, or marketer, there's a place for you to make a difference in our mission.
-          </li>
-        </ul>
-      </section>
-
       {/* Contact Form */}
       <section className="contact-section-joinus">
-        <h2>Get in Touch and Join Us</h2>
         <form className="contact-form-joinus">
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" />

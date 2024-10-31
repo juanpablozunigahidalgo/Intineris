@@ -19,7 +19,7 @@ const Footer1: React.FC = () => {
         <footer className="footer">
             <div className="footer-section address">
                 <h3>Address</h3>
-                <p>Sankt Eriksgatan 6<br />Göteborg<br />Sweden</p>
+                <p><br />Göteborg<br />Sweden</p>
             </div>
             <div className="footer-section services">
                 <h3> </h3>
@@ -32,10 +32,10 @@ const Footer1: React.FC = () => {
             <div className="footer-section company">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#vision" onClick={() => scrollToSection('vision')}>Vision</a></li>      {/* Links to Vision */}
-                    <li><a href="/joinus">Join Us</a></li>    {/* Links to Features */}
+                    <li><a href="#vision" onClick={() => scrollToSection('vision')}>Logic</a></li>      {/* Links to Vision */}
+                    <li><a href="/joinus">Join</a></li>    {/* Links to Features */}
                     <li><a href="/faq">FAQ</a></li>             {/* Link to FAQ page */}
-                    <li><a href="/investor-information">Investor Information</a></li> {/* Link to Investor Info page */}
+                    <li><a href="/investor-information">Investors</a></li> {/* Link to Investor Info page */}
                 </ul>
             </div>
             <div className="footer-section support">

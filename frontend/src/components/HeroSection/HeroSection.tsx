@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           sx={{ 
             fontSize: '50px',   // Larger font size
             fontWeight: 'bold', // Bolder text
-            marginBottom: '20px' // Increase space below
+            marginBottom: '5px' // Increase space below
           }}
         >
           Intineris
@@ -46,7 +46,11 @@ const HeroSection: React.FC = () => {
             lineHeight: 1.5         // Adjust the line height for better spacing
           }}
         >
-          Showers and storage for: <span ref={typedElement}></span>
+          Showers and storage for <span ref={typedElement} style={{ 
+               // Larger font size
+            fontWeight: 'bold' // Bolder text
+             // Increase space below 
+             }}></span>
         </Typography>
       </Box>
       <Box className="hero-right">

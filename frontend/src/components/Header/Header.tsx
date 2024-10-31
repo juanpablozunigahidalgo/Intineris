@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <Toolbar className="toolbar">
         <div className="nav-links">
           <Button color="inherit" className="nav-link" href="#home">Home</Button>
-          <Button color="inherit" className="nav-link" onClick={() => scrollToSection('vision')}>Vision</Button>
+          <Button color="inherit" className="nav-link" onClick={() => scrollToSection('vision')}>Logic</Button>
           <Button color="inherit" className="nav-link" onClick={() => scrollToSection('features')}>Features</Button>
           <Button
             color="inherit"
