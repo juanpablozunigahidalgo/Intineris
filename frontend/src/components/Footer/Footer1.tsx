@@ -35,7 +35,7 @@ const Footer1: React.FC = () => {
                     <li><a href="#vision" onClick={() => scrollToSection('vision')}>Logic</a></li>      {/* Links to Vision */}
                     <li><a href="/joinus">Join</a></li>    {/* Links to Features */}
                     <li><a href="/faq">FAQ</a></li>             {/* Link to FAQ page */}
-                    <li><a href="/investor-information">Investors</a></li> {/* Link to Investor Info page */}
+                    <li><a href="/investors">Investors</a></li> {/* Link to Investor Info page */}
                 </ul>
             </div>
             <div className="footer-section support">

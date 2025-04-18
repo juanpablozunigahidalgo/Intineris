@@ -28,16 +28,15 @@ const HeroSection: React.FC = () => {
   return (
     <Box className="hero-section">
       <Box className="hero-left">
-        {/* Apply inline styles for bigger and bolder title */}
         <Typography 
           variant="h2" 
           sx={{ 
-            fontSize: '50px',   // Larger font size
-            fontWeight: 'bold', // Bolder text
-            marginBottom: '5px' // Increase space below
+            fontSize: '50px',
+            fontWeight: 'bold',
+            marginBottom: '5px'
           }}
         >
-          Intineris
+          Gettashower
         </Typography>
         <Typography 
           variant="h5" 

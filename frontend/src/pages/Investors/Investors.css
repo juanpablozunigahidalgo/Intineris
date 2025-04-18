@@ -1,91 +1,56 @@
 .investors-container {
-    background-color: #001122;
-    color: white;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  /* Text Section */
-  .text-section-investors {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
+  background-color: #001122;
+  color: white;
+  min-height: 100vh; /* Ensures the container takes full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+}
+
+.text-section-investors {
+  text-align: justify; /* Justifies text */
+  max-width: 800px; /* Set a maximum width for better readability */
+  margin: 40px 0 90px 0; /* Increased bottom margin to 70px for more space below text */
+}
+
+.text-section-investors h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-section-investors p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.pitch-button {
+  background-color: white;
+  color: #001122;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.pitch-button:hover {
+  background-color: #ccc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .text-section-investors h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Smaller heading size */
   }
-  
+
   .text-section-investors p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 1rem; /* Smaller paragraph size */
   }
-  
-  /* Hero Section */
-  .hero-section-investors {
-    background-color: #001122;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .pitch-button {
-    background-color: white;
-    color: #001122;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Smaller button size */
+    font-size: 1rem; /* Smaller font size */
   }
-  
-  .pitch-button:hover {
-    background-color: #ccc;
-  }
-  
-  /* Contact Section */
-  .contact-section {
-    margin-top: 40px;
-    text-align: center;
-  }
-  
-  .contact-section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .contact-form label {
-    margin-bottom: 5px;
-  }
-  
-  .contact-form input, 
-  .contact-form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f0f0f0;
-  }
-  
-  .contact-form button {
-    background-color: white;
-    color: #001122;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-form button:hover {
-    background-color: #ccc;
-  }
-  
+}

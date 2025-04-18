@@ -1,54 +1,75 @@
 .section-position {
-    min-height: 300px; /* Ensure it takes the full viewport height */
+  height: 100vh;
+  max-height: 400px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .center-vertical {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack items in a column if needed */
-    margin-top: 100px;
-     /* Ensure it takes the full height of the parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.features-title {
+  color: #001122;
+  margin-bottom: 30px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  font-size: 2rem !important;
 }
 
 .features-container {
-    background-color: white; /* Keep white background */
-    color: #001122; /* Dark blue text color */
-    padding: 20px;
-    width: 100%; /* Full width */
+  width: 100%;
 }
 
 .feature-item {
-    text-align: center; /* Center text */
-    margin-bottom: 20px; /* Space between items */
-    flex: 1 1 calc(33.333% - 20px); /* Split into three columns */
-    box-sizing: border-box; /* Include padding in width calculation */
-    padding: 20px; /* Add padding for internal spacing */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white !important;
+  border-radius: 15px !important;
+  height: auto;
+}
+
+.feature-icon {
+  color: #001122;
+  margin-bottom: 15px;
 }
 
 .feature-title {
-    color: #001122; /* Dark blue for title */
-    font-weight:700!important; /* Make the title bold */
-    font: size 50px;;
-    margin-bottom: 12px; /* Space below title */
+  color: #001122;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  font-size: 1.25rem !important;
 }
 
 .feature-description {
-    color: #001122; /* Dark blue text color */
-    padding: 10px; /* Add some padding */
-    border-radius: 4px; /* Optional: Rounded corners */
-    margin-top: 8px; /* Space above description */
+  color: #666;
+  line-height: 1.4 !important;
+  font-size: 0.9rem !important;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .features-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items */
-    }
+  .section-position {
+    height: auto;
+    min-height: 400px;
+    padding: 40px 0;
+  }
 
-    .feature-item {
-        flex: 1 1 100%; /* Full width on mobile */
-        margin-bottom: 20px; /* Space between items */
-    }
+  .center-vertical {
+    padding: 0 20px;
+  }
+
+  .feature-item {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
 }

@@ -1,36 +1,41 @@
 import React from 'react';
-import './JoinUs.css';  // Import the CSS file
+import { useNavigate } from 'react-router-dom';
+import './JoinUs.css';
 
 const JoinUs: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/'); // Navigate to the homepage
+
+    // Add a short delay to ensure the page loads before scrolling
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Adjust timing if needed
+  };
+
   return (
     <div className="joinus-container--joinus">
       
       {/* Text Section */}
       <section className="text-section-joinus">
-        <h1>Join US</h1>
+        <h1>Join Us</h1>
         <p>
-          Intineris is on a mission to create a more sustainable and convenient world by offering people access to showers and safe storage for their belongings. Whether you're a tourist, hiker, cyclist, runner, or swimmer, Intineris is about transforming cities into a vast gym where you can be active and access every corner of the city. The city is yours. The city is for everyone to enjoy. 
+          Intineris is on a mission to create a more sustainable and convenient world by offering people access to showers and safe storage for their belongings. Whether you're a tourist, hiker, cyclist, runner, or swimmer, Intineris is about transforming cities into a vast gym where you can be active and access every corner of the city. The city is yours. The city is for everyone to enjoy.
         </p>
         <p>
-          If you want to contribute as an engineer, business idealist, or individual, you are welcome! This is about finding passionate people who want to better the world, reduce the use of petrol transportation, and incentivize human-powered transport. 
+          If you want to contribute as an engineer, business idealist, or individual, you are welcome! This is about finding passionate people who want to better the world, reduce the use of petrol transportation, and incentivize human-powered transport.
         </p>
       </section>
       
-      
-      {/* Contact Form */}
+      {/* Contact Button */}
       <section className="contact-section-joinus">
-        <form className="contact-form-joinus">
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" />
-          
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" />
-          
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" rows={4} placeholder="Tell us how you'd like to contribute!" />
-          
-          <button type="submit">Submit</button>
-        </form>
+        <button onClick={handleContactClick} className="join-button">
+          Contact Us
+        </button>
       </section>
       
     </div>
