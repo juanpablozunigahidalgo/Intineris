@@ -21,32 +21,37 @@ const Header: React.FC = () => {
     <AppBar position="static" sx={{ backgroundColor: '#001122' }}>
       <Toolbar className="toolbar">
         <div className="nav-links">
-          <Button color="inherit" className="nav-link" href="#home">Home</Button>
+          <Button
+            color="inherit"
+            className="nav-link"
+            component={RouterLink}
+            to="/home"
+          >
+            HOME
+          </Button>
           <Button
             color="inherit"
             className="nav-link"
             component={RouterLink}
             to="/logic"
           >
-            Logic
+            LOGIC
           </Button>
-          <Button color="inherit" className="nav-link" onClick={() => scrollToSection('features')}>Features</Button>
-          <Button
-            color="inherit"
-            className="nav-link"
-            component={RouterLink}
-            to="/investors"
-          >
-            Investors
-          </Button>
-          <Button color="inherit" className="nav-link" onClick={() => scrollToSection('contact')}>Contact</Button>
           <Button
             color="inherit"
             className="nav-link"
             component={RouterLink}
             to="/Prototype"
           >
-           Get APP
+            GET APP
+          </Button>
+          <Button
+            color="inherit"
+            className="nav-link"
+            component={RouterLink}
+            to="/joinus"
+          >
+            JOIN US
           </Button>
         </div>
       </Toolbar>

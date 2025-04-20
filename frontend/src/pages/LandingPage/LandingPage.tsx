@@ -4,8 +4,6 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 import HeroSection2 from '../../components/HeroSection2/HeroSection2';
 import Features from '../../components/Features/Features';
 import Footer from '../../components/Footer/Footer1';
-import BlueHero from '../../components/BlueHero/BlueHero';
-import ContactForm from '../../components/ContactForm/ContactForm';
 
 const LandingPage: React.FC = () => {
   return (
@@ -19,12 +17,6 @@ const LandingPage: React.FC = () => {
       </section>
       <section id="features">
         <Features />
-      </section>
-      <section id="campaign">
-        <BlueHero />
-      </section>
-      <section id="contact">
-        <ContactForm />
       </section>
       <Footer />
     </>
