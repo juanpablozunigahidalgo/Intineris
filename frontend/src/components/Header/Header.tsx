@@ -1,31 +1,34 @@
-import React from 'react';
-import { AppBar, Toolbar, Button } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom'; // Import Link from react-router-dom
-import './Header.css'; // Import new styles
+import React, { useState } from 'react';
+import { AppBar, Toolbar, Button, IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import { Link as RouterLink } from 'react-router-dom';
+import './Header.css';
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
-      const offset = window.innerHeight / 4;  // Middle of the screen
-      window.scrollTo({
-        top: sectionPosition - offset,
-        behavior: 'smooth',
-      });
-    }
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <AppBar position="static" sx={{ backgroundColor: '#001122' }}>
       <Toolbar className="toolbar">
-        <div className="nav-links">
+        <IconButton
+          color="inherit"
+          className="menu-button"
+          onClick={toggleMenu}
+          sx={{ display: { md: 'none' } }}
+        >
+          <MenuIcon />
+        </IconButton>
+        <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <Button
             color="inherit"
             className="nav-link"
             component={RouterLink}
-            to="/home"
+            to="/gettashower"
+            onClick={() => setIsMenuOpen(false)}
           >
             HOME
           </Button>
@@ -33,7 +36,17 @@ const Header: React.FC = () => {
             color="inherit"
             className="nav-link"
             component={RouterLink}
+            to="/fullmap"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            FULL MAP
+          </Button>
+          <Button
+            color="inherit"
+            className="nav-link"
+            component={RouterLink}
             to="/logic"
+            onClick={() => setIsMenuOpen(false)}
           >
             LOGIC
           </Button>
@@ -42,6 +55,7 @@ const Header: React.FC = () => {
             className="nav-link"
             component={RouterLink}
             to="/Prototype"
+            onClick={() => setIsMenuOpen(false)}
           >
             GET APP
           </Button>
@@ -50,6 +64,7 @@ const Header: React.FC = () => {
             className="nav-link"
             component={RouterLink}
             to="/joinus"
+            onClick={() => setIsMenuOpen(false)}
           >
             JOIN US
           </Button>

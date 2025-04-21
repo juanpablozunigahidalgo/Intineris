@@ -5,24 +5,38 @@
 
 .toolbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    position: relative;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Pushes the nav-links to the right */
+    gap: 10px;
 }
 
-.nav-link {
-    color: white !important; /* White text */
-    margin-right: 10px;
-}
+@media (max-width: 900px) {
+    .menu-button {
+        display: flex !important;
+        position: absolute;
+        right: 16px;  /* Changed from left to right */
+    }
 
-.logo {
-    color: white !important; /* White text */
-    font-weight: bold; /* Make the text bolder */
-    font-size: 1.5rem; /* Increase the font size */
-    margin-right: auto; /* Pushes the logo to the left */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: #001122;
+        padding: 16px;
+        gap: 16px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }

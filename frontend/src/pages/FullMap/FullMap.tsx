@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import ShowerMap from '../../components/ShowerMap/ShowerMap';
 import Footer from '../../components/Footer/Footer1';
 
-const Home: React.FC = () => {
+const FullMap: React.FC = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default FullMap;

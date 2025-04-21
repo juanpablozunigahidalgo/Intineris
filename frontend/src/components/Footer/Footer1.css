@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     padding: 20px;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif; /* Updated font-family */
-    min-height: 300px; /* Set a minimum height for large screens */
+    min-height: 200px; /* Set a minimum height for large screens */
 }
 
 .footer-section {
