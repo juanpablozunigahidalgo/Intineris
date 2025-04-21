@@ -6,7 +6,7 @@ const Investors: React.FC = () => {
     <div className="investors-container">
       <section className="text-section-investors">
         <h1>Invest</h1>
-        <p>We invite investors to be part of our building story. Learn more about our vision, and contact us for the opportunity Intineris offers.</p>
+        <p>We invite investors to be part of our building story. Learn more about our vision, and contact us for the opportunity Gettashower offers.</p>
       </section>
 
       <a 

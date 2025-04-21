@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import HeroSection2 from '../../components/HeroSection2/HeroSection2';
+import MapPreviewSection from '../../components/MapPreviewSection/MapPreviewSection';
 import Features from '../../components/Features/Features';
 import Footer from '../../components/Footer/Footer1';
 
@@ -11,6 +12,9 @@ const LandingPage: React.FC = () => {
       <Header />
       <section id="home">
         <HeroSection />
+      </section>
+      <section id="map-preview">
+        <MapPreviewSection />
       </section>
       <section id="vision">
         <HeroSection2 />

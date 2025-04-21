@@ -30,9 +30,9 @@ const Features: React.FC = () => {
         <Typography variant="h2" className="features-title">
           Our Features
         </Typography>
-        <Grid container spacing={4} className="features-container">
+        <Grid container spacing={3} className="features-container">
           {featuresData.map((feature) => (
-            <Grid item xs={12} sm={4} key={feature.title}>
+            <Grid item xs={12} sm={12} md={4} key={feature.title}>
               <Paper elevation={3} className="feature-item">
                 <div className="feature-icon">{feature.icon}</div>
                 <Typography variant="h4" className="feature-title">

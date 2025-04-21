@@ -1,0 +1,52 @@
+.map-preview-container {
+  height: 600px;  /* Adjusted height */
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  background-color: #001122;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.map-preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 17, 34, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.map-preview-overlay span {
+  color: white;
+  background: rgba(18, 24, 38, 0.85);
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+}
+
+.map-preview-container:hover .map-preview-overlay {
+  opacity: 1;
+}
+
+.marker-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #001122;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .map-preview-container {
+    height: 400px;  /* Adjusted height for mobile */
+  }
+}

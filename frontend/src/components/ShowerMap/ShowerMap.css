@@ -2,11 +2,25 @@
   height: calc(100vh - 64px); /* Subtract header height */
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
+/* Update popup styles for better mobile view */
 .shower-popup {
   padding: 15px;
-  min-width: 250px;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 600px) {
+  .shower-popup {
+    max-width: 260px;
+    padding: 12px;
+  }
+  
+  .amenity-chip {
+    font-size: 0.7rem !important;
+  }
 }
 
 .opening-hours {

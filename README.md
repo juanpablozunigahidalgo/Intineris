@@ -1,2 +1,2 @@
-# Intineris
-Open source project 
+# Gettashower
+Open source project
